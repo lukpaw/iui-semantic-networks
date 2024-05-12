@@ -7,4 +7,3 @@ networkx
 matplotlib
 mpld3
 # https://www.graphviz.org/download/
-# https://colab.research.google.com/github/joerg84/Graph_Powered_ML_Workshop/blob/master/Sparql.ipynb#scrollTo=6mWsZVLn7VBQ

@@ -35,7 +35,7 @@ def build_graph1():
     :Ewa  :hasParent :Jan ;
           :gender    :female .
     :Jan  :gender    :male .
-    :Mike :hasParent :Ewa ;
+    :Alan :hasParent :Ewa ;
           :gender    :male ."""
     g.parse(data=n3data, format="n3")
     return g
@@ -90,7 +90,7 @@ def who_knows_each_other(g):
 def build_graph3():
     g = Graph()
     n3data = """
-    @prefix ex: <http://example.org/schemas/vehicles#> .
+    @prefix ex: <http://example.org/organizmy#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .    
     ex:Zwierze            rdf:type          rdfs:Class .
@@ -149,9 +149,9 @@ if __name__ == '__main__':
     # visualize(g2)
     # simple_sparql_query(g2)
     # who_knows_each_other(g2)
-
+    #
     # g3 = build_graph3()
     # visualize(g3)
     # which_is_zwierze(g3)
-
+    #
     # explore_dbpedia()
